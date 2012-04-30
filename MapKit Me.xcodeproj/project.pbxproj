@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD912F7D154F38ED00C3CDCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD912F7C154F38ED00C3CDCC /* UIKit.framework */; };
+		DD912F7F154F38ED00C3CDCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD912F7E154F38ED00C3CDCC /* Foundation.framework */; };
+		DD912F81154F38ED00C3CDCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD912F80154F38ED00C3CDCC /* CoreGraphics.framework */; };
+		DD912F87154F38ED00C3CDCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD912F85154F38ED00C3CDCC /* InfoPlist.strings */; };
+		DD912F89154F38ED00C3CDCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD912F88154F38ED00C3CDCC /* main.m */; };
+		DD912F8D154F38ED00C3CDCC /* MKMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD912F8C154F38ED00C3CDCC /* MKMAppDelegate.m */; };
+		DD912F90154F38ED00C3CDCC /* MKMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD912F8F154F38ED00C3CDCC /* MKMViewController.m */; };
+		DD912F93154F38ED00C3CDCC /* MKMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD912F91154F38ED00C3CDCC /* MKMViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD912F78154F38ED00C3CDCC /* MapKit Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapKit Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD912F7C154F38ED00C3CDCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD912F7E154F38ED00C3CDCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD912F80154F38ED00C3CDCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD912F84154F38ED00C3CDCC /* MapKit Me-Info.plist */ = {isa = PBXFileReference; path = "MapKit Me-Info.plist"; sourceTree = "<group>"; };
+		DD912F86154F38ED00C3CDCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD912F88154F38ED00C3CDCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD912F8A154F38ED00C3CDCC /* MapKit Me-Prefix.pch */ = {isa = PBXFileReference; path = "MapKit Me-Prefix.pch"; sourceTree = "<group>"; };
+		DD912F8B154F38ED00C3CDCC /* MKMAppDelegate.h */ = {isa = PBXFileReference; path = MKMAppDelegate.h; sourceTree = "<group>"; };
+		DD912F8C154F38ED00C3CDCC /* MKMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMAppDelegate.m; sourceTree = "<group>"; };
+		DD912F8E154F38ED00C3CDCC /* MKMViewController.h */ = {isa = PBXFileReference; path = MKMViewController.h; sourceTree = "<group>"; };
+		DD912F8F154F38ED00C3CDCC /* MKMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMViewController.m; sourceTree = "<group>"; };
+		DD912F92154F38ED00C3CDCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MKMViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD912F75154F38ED00C3CDCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD912F7D154F38ED00C3CDCC /* UIKit.framework in Frameworks */,
+				DD912F7F154F38ED00C3CDCC /* Foundation.framework in Frameworks */,
+				DD912F81154F38ED00C3CDCC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD912F6D154F38ED00C3CDCC = {
+			isa = PBXGroup;
+			children = (
+				DD912F82154F38ED00C3CDCC /* MapKit Me */,
+				DD912F7B154F38ED00C3CDCC /* Frameworks */,
+				DD912F79154F38ED00C3CDCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD912F79154F38ED00C3CDCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD912F78154F38ED00C3CDCC /* MapKit Me.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD912F7B154F38ED00C3CDCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD912F7C154F38ED00C3CDCC /* UIKit.framework */,
+				DD912F7E154F38ED00C3CDCC /* Foundation.framework */,
+				DD912F80154F38ED00C3CDCC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD912F82154F38ED00C3CDCC /* MapKit Me */ = {
+			isa = PBXGroup;
+			children = (
+				DD912F8B154F38ED00C3CDCC /* MKMAppDelegate.h */,
+				DD912F8C154F38ED00C3CDCC /* MKMAppDelegate.m */,
+				DD912F8E154F38ED00C3CDCC /* MKMViewController.h */,
+				DD912F8F154F38ED00C3CDCC /* MKMViewController.m */,
+				DD912F91154F38ED00C3CDCC /* MKMViewController.xib */,
+				DD912F83154F38ED00C3CDCC /* Supporting Files */,
+			);
+			path = "MapKit Me";
+			sourceTree = "<group>";
+		};
+		DD912F83154F38ED00C3CDCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD912F84154F38ED00C3CDCC /* MapKit Me-Info.plist */,
+				DD912F85154F38ED00C3CDCC /* InfoPlist.strings */,
+				DD912F88154F38ED00C3CDCC /* main.m */,
+				DD912F8A154F38ED00C3CDCC /* MapKit Me-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD912F77154F38ED00C3CDCC /* MapKit Me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD912F96154F38ED00C3CDCC /* Build configuration list for PBXNativeTarget "MapKit Me" */;
+			buildPhases = (
+				DD912F74154F38ED00C3CDCC /* Sources */,
+				DD912F75154F38ED00C3CDCC /* Frameworks */,
+				DD912F76154F38ED00C3CDCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MapKit Me";
+			productName = "MapKit Me";
+			productReference = DD912F78154F38ED00C3CDCC /* MapKit Me.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD912F6F154F38ED00C3CDCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MKM;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "MapBox / Development Seed";
+			};
+			buildConfigurationList = DD912F72154F38ED00C3CDCC /* Build configuration list for PBXProject "MapKit Me" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD912F6D154F38ED00C3CDCC;
+			productRefGroup = DD912F79154F38ED00C3CDCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD912F77154F38ED00C3CDCC /* MapKit Me */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD912F76154F38ED00C3CDCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD912F87154F38ED00C3CDCC /* InfoPlist.strings in Resources */,
+				DD912F93154F38ED00C3CDCC /* MKMViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD912F74154F38ED00C3CDCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD912F89154F38ED00C3CDCC /* main.m in Sources */,
+				DD912F8D154F38ED00C3CDCC /* MKMAppDelegate.m in Sources */,
+				DD912F90154F38ED00C3CDCC /* MKMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD912F85154F38ED00C3CDCC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD912F86154F38ED00C3CDCC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD912F91154F38ED00C3CDCC /* MKMViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD912F92154F38ED00C3CDCC /* en */,
+			);
+			name = MKMViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD912F94154F38ED00C3CDCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD912F95154F38ED00C3CDCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD912F97154F38ED00C3CDCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapKit Me/MapKit Me-Prefix.pch";
+				INFOPLIST_FILE = "MapKit Me/MapKit Me-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD912F98154F38ED00C3CDCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapKit Me/MapKit Me-Prefix.pch";
+				INFOPLIST_FILE = "MapKit Me/MapKit Me-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD912F72154F38ED00C3CDCC /* Build configuration list for PBXProject "MapKit Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD912F94154F38ED00C3CDCC /* Debug */,
+				DD912F95154F38ED00C3CDCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD912F96154F38ED00C3CDCC /* Build configuration list for PBXNativeTarget "MapKit Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD912F97154F38ED00C3CDCC /* Debug */,
+				DD912F98154F38ED00C3CDCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD912F6F154F38ED00C3CDCC /* Project object */;
+}
