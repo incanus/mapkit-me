@@ -15,6 +15,8 @@
 		DD912F8D154F38ED00C3CDCC /* MKMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD912F8C154F38ED00C3CDCC /* MKMAppDelegate.m */; };
 		DD912F90154F38ED00C3CDCC /* MKMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD912F8F154F38ED00C3CDCC /* MKMViewController.m */; };
 		DD912F93154F38ED00C3CDCC /* MKMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD912F91154F38ED00C3CDCC /* MKMViewController.xib */; };
+		DD912F9A154F393E00C3CDCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD912F99154F393E00C3CDCC /* MapKit.framework */; };
+		DD912FB0154F3B3F00C3CDCC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD912FAF154F3B3F00C3CDCC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +24,17 @@
 		DD912F7C154F38ED00C3CDCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD912F7E154F38ED00C3CDCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD912F80154F38ED00C3CDCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DD912F84154F38ED00C3CDCC /* MapKit Me-Info.plist */ = {isa = PBXFileReference; path = "MapKit Me-Info.plist"; sourceTree = "<group>"; };
+		DD912F84154F38ED00C3CDCC /* MapKit Me-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapKit Me-Info.plist"; sourceTree = "<group>"; };
 		DD912F86154F38ED00C3CDCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD912F88154F38ED00C3CDCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD912F8A154F38ED00C3CDCC /* MapKit Me-Prefix.pch */ = {isa = PBXFileReference; path = "MapKit Me-Prefix.pch"; sourceTree = "<group>"; };
-		DD912F8B154F38ED00C3CDCC /* MKMAppDelegate.h */ = {isa = PBXFileReference; path = MKMAppDelegate.h; sourceTree = "<group>"; };
+		DD912F8A154F38ED00C3CDCC /* MapKit Me-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapKit Me-Prefix.pch"; sourceTree = "<group>"; };
+		DD912F8B154F38ED00C3CDCC /* MKMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKMAppDelegate.h; sourceTree = "<group>"; };
 		DD912F8C154F38ED00C3CDCC /* MKMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMAppDelegate.m; sourceTree = "<group>"; };
-		DD912F8E154F38ED00C3CDCC /* MKMViewController.h */ = {isa = PBXFileReference; path = MKMViewController.h; sourceTree = "<group>"; };
+		DD912F8E154F38ED00C3CDCC /* MKMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKMViewController.h; sourceTree = "<group>"; };
 		DD912F8F154F38ED00C3CDCC /* MKMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMViewController.m; sourceTree = "<group>"; };
 		DD912F92154F38ED00C3CDCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MKMViewController.xib; sourceTree = "<group>"; };
+		DD912F99154F393E00C3CDCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DD912FAF154F3B3F00C3CDCC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD912F7D154F38ED00C3CDCC /* UIKit.framework in Frameworks */,
-				DD912F7F154F38ED00C3CDCC /* Foundation.framework in Frameworks */,
 				DD912F81154F38ED00C3CDCC /* CoreGraphics.framework in Frameworks */,
+				DD912FB0154F3B3F00C3CDCC /* CoreLocation.framework in Frameworks */,
+				DD912F7F154F38ED00C3CDCC /* Foundation.framework in Frameworks */,
+				DD912F9A154F393E00C3CDCC /* MapKit.framework in Frameworks */,
+				DD912F7D154F38ED00C3CDCC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,9 +73,11 @@
 		DD912F7B154F38ED00C3CDCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD912F7C154F38ED00C3CDCC /* UIKit.framework */,
-				DD912F7E154F38ED00C3CDCC /* Foundation.framework */,
 				DD912F80154F38ED00C3CDCC /* CoreGraphics.framework */,
+				DD912FAF154F3B3F00C3CDCC /* CoreLocation.framework */,
+				DD912F7E154F38ED00C3CDCC /* Foundation.framework */,
+				DD912F99154F393E00C3CDCC /* MapKit.framework */,
+				DD912F7C154F38ED00C3CDCC /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,7 +249,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapKit Me/MapKit Me-Prefix.pch";
 				INFOPLIST_FILE = "MapKit Me/MapKit Me-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -252,7 +262,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapKit Me/MapKit Me-Prefix.pch";
 				INFOPLIST_FILE = "MapKit Me/MapKit Me-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -276,6 +288,7 @@
 				DD912F98154F38ED00C3CDCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

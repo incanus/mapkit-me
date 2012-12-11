@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class MKMViewController;
-
 @interface MKMAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) MKMViewController *viewController;
 
 @end
