@@ -17,6 +17,7 @@
 		DD912F93154F38ED00C3CDCC /* MKMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD912F91154F38ED00C3CDCC /* MKMViewController.xib */; };
 		DD912F9A154F393E00C3CDCC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD912F99154F393E00C3CDCC /* MapKit.framework */; };
 		DD912FB0154F3B3F00C3CDCC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD912FAF154F3B3F00C3CDCC /* CoreLocation.framework */; };
+		DDE0253116BA0A180023FB52 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE0253016BA0A180023FB52 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		DD912F92154F38ED00C3CDCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MKMViewController.xib; sourceTree = "<group>"; };
 		DD912F99154F393E00C3CDCC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DD912FAF154F3B3F00C3CDCC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DDE0253016BA0A180023FB52 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				DD912F85154F38ED00C3CDCC /* InfoPlist.strings */,
 				DD912F88154F38ED00C3CDCC /* main.m */,
 				DD912F8A154F38ED00C3CDCC /* MapKit Me-Prefix.pch */,
+				DDE0253016BA0A180023FB52 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				DD912F87154F38ED00C3CDCC /* InfoPlist.strings in Resources */,
 				DD912F93154F38ED00C3CDCC /* MKMViewController.xib in Resources */,
+				DDE0253116BA0A180023FB52 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
