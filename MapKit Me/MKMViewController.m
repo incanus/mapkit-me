@@ -21,9 +21,6 @@
 
 @implementation MKMViewController
 
-@synthesize mapView;
-@synthesize segmentedControl;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
