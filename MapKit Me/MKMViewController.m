@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) IBOutlet UISegmentedControl *segmentedControl;
+@property (nonatomic, strong) CLGeocoder *geocoder;
 
 @end
 
@@ -79,6 +80,8 @@
 
     annotation.title = @"Dropped Pin";
 
+    [self updateSubtitleForAnnotation:annotation];
+
     [self.mapView addAnnotation:annotation];
 }
 
@@ -88,6 +91,24 @@
         for (id <MKAnnotation>annotation in self.mapView.annotations)
             if ( ! [annotation isKindOfClass:[MKUserLocation class]])
                 [self.mapView removeAnnotation:annotation];
+}
+
+- (void)updateSubtitleForAnnotation:(id <MKAnnotation>)annotation
+{
+    [self.geocoder cancelGeocode];
+
+    self.geocoder = [CLGeocoder new];
+
+    [self.geocoder reverseGeocodeLocation:[[CLLocation alloc] initWithLatitude:annotation.coordinate.latitude longitude:annotation.coordinate.longitude]
+                        completionHandler:^(NSArray *placemarks, NSError *error)
+    {
+        if (placemarks)
+        {
+            CLPlacemark *placemark = [placemarks objectAtIndex:0];
+
+            [(NSObject *)annotation setValue:placemark.name forKey:@"subtitle"];
+        }
+    }];
 }
 
 #pragma mark -
@@ -103,7 +124,21 @@
 
     pin.canShowCallout = YES;
 
+    pin.draggable = YES;
+
     return pin;
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+    if ( ! view.annotation.subtitle)
+        [self updateSubtitleForAnnotation:view.annotation];
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)annotationView didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState
+{
+    if (oldState == MKAnnotationViewDragStateDragging && newState == MKAnnotationViewDragStateEnding)
+        [self updateSubtitleForAnnotation:annotationView.annotation];
 }
 
 @end
